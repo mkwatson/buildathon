@@ -11,12 +11,12 @@
 - [Lesson 1: Introduction](#lesson-1-introduction) - *5 mins* - *Video Only*
 - [Lesson 2: Knowledge Graph Fundamentals](#lesson-2-knowledge-graph-fundamentals) - *6 mins* - *Video Only*
 - [Lesson 3: Querying Knowledge Graphs](#lesson-3-querying-knowledge-graphs) - *19 mins* - *Video + Interactive Code*
-- [Lesson 4: Untitled Lesson](#lesson-4-untitled-lesson) - *Unknown* - *Unknown*
-- [Lesson 5: Untitled Lesson](#lesson-5-untitled-lesson) - *Unknown* - *Unknown*
-- [Lesson 6: Untitled Lesson](#lesson-6-untitled-lesson) - *Unknown* - *Unknown*
-- [Lesson 7: Untitled Lesson](#lesson-7-untitled-lesson) - *Unknown* - *Unknown*
-- [Lesson 8: Untitled Lesson](#lesson-8-untitled-lesson) - *Unknown* - *Unknown*
-- [Lesson 9: Untitled Lesson](#lesson-9-untitled-lesson) - *Unknown* - *Unknown*
+- [Lesson 4: Preparing Text for RAG](#lesson-4-preparing-text-for-rag) - *13 mins* - *Video + Code*
+- [Lesson 5: Constructing a Knowledge Graph from Text Documents](#lesson-5-constructing-a-knowledge-graph-from-text-documents) - *15 mins* - *Video + Code*
+- [Lesson 6: Adding Relationships to the SEC Knowledge Graph](#lesson-6-adding-relationships-to-the-sec-knowledge-graph) - *18 mins* - *Video + Code*
+- [Lesson 7: Expanding the SEC Knowledge Graph](#lesson-7-expanding-the-sec-knowledge-graph) - *16 mins* - *Video + Code*
+- [Lesson 8: Chatting with the Knowledge Graph](#lesson-8-chatting-with-the-knowledge-graph) - *23 mins* - *Video + Code*
+- [Lesson 9: Conclusion](#lesson-9-conclusion) - *2 mins* - *Video Only*
 
 ### Additional Sections
 - [Course Summary](#course-summary)
@@ -46,8 +46,8 @@ This comprehensive reference contains all video transcripts and complete Jupyter
 
 **Total Lessons Extracted:** 9 / 9
 **Video-Only Lessons:** 2
-**Video + Code Lessons:** 1
-**Total Word Count:** 14,162
+**Video + Code Lessons:** 7
+**Total Word Count:** 14,734
 **Total Code Blocks:** 155
 
 ### Lesson Breakdown
@@ -57,12 +57,12 @@ This comprehensive reference contains all video transcripts and complete Jupyter
 | 1 | Introduction | Video Only | 5 mins | 690 | 0 |
 | 2 | Knowledge Graph Fundamentals | Video Only | 6 mins | 686 | 0 |
 | 3 | Querying Knowledge Graphs | Video + Interac | 19 mins | 2,505 | 47 |
-| 4 | Untitled Lesson | Unknown | Unknown | 1,455 | 27 |
-| 5 | Untitled Lesson | Unknown | Unknown | 3,082 | 81 |
-| 6 | Untitled Lesson | Unknown | Unknown | 2,495 | 0 |
-| 7 | Untitled Lesson | Unknown | Unknown | 2,526 | 0 |
-| 8 | Untitled Lesson | Unknown | Unknown | 334 | 0 |
-| 9 | Untitled Lesson | Unknown | Unknown | 389 | 0 |
+| 4 | Preparing Text for RAG | Video + Code | 13 mins | 1,547 | 25 |
+| 5 | Constructing a Knowledge Graph from Text Documents | Video + Code | 15 mins | 4,121 | 51 |
+| 6 | Adding Relationships to the SEC Knowledge Graph | Video + Code | 18 mins | 3,998 | 52 |
+| 7 | Expanding the SEC Knowledge Graph | Video + Code | 16 mins | 3,456 | 27 |
+| 8 | Chatting with the Knowledge Graph | Video + Code | 23 mins | 1,089 | 0 |
+| 9 | Conclusion | Video Only | 2 mins | 523 | 0 |
 
 ---
 
@@ -434,7 +434,7 @@ kg.query(cypher)
 
 ---
 
-# Lesson 4: Preparing Text for RAG
+## Lesson 4: Preparing Text for RAG
 
 ## Video Transcript
 
@@ -594,7 +594,7 @@ RETURN movie.title, movie.tagline, score
 """, params={"openAiApiKey": OPENAI_API_KEY, "openAiEndpoint": OPENAI_ENDPOINT, "question": question, "top_k": 5})
 ```
 
-# Lesson 5: Constructing a Knowledge Graph from Text Documents
+## Lesson 5: Constructing a Knowledge Graph from Text Documents
 
 ## Video Transcript
 
@@ -602,7 +602,7 @@ In this lesson, you'll use what you've learned so far to start building a Knowle
 
 ## Notebook Content
 
-### Lesson 4: Constructing a Knowledge Graph from Text Documents
+### Lesson 5: Constructing a Knowledge Graph from Text Documents
 
 **Note:** This notebook takes about 30 seconds to be ready to use. Please wait until the "Kernel starting, please wait..." message clears from the top of the notebook before running any cells. You may start the video while you wait.
 
@@ -985,7 +985,7 @@ ADD YOUR OWN QUESTION HERE
 """)
 ```
 
-# Lesson 6: Adding Relationships to the SEC Knowledge Graph
+## Lesson 6: Adding Relationships to the SEC Knowledge Graph
 
 ## Video Transcript
 
@@ -1013,7 +1013,7 @@ Note: The notebook content could not be fully extracted due to page loading issu
 - Custom retrieval queries extending Neo4j vector search
 - Context expansion using adjacent chunks for better RAG responses
 
-# Lesson 7: Expanding the SEC Knowledge Graph
+## Lesson 7: Expanding the SEC Knowledge Graph
 
 ## Video Transcript
 
@@ -1047,7 +1047,7 @@ Note: This lesson expands the SEC Knowledge Graph by adding Form 13 data about i
 - Enhanced vector search queries with investment context
 - Comparison of RAG responses with and without investment data context
 
-# Lesson 8: Chatting with the Knowledge Graph
+## Lesson 8: Chatting with the Knowledge Graph
 
 ## Video Transcript
 
@@ -1090,7 +1090,7 @@ Note: This lesson demonstrates advanced chatbot techniques using Neo4j's GraphCy
 - Real-time query execution and response formatting
 - Complex business intelligence queries using graph patterns
 
-# Lesson 9: Conclusion
+## Lesson 9: Conclusion
 
 ## Video Transcript
 
